@@ -1,0 +1,46 @@
+header {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    border-bottom: 1px solid white;
+}
+
+ul {
+    color: white;
+    font-size: 21px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    // line-height: 20px;
+}
+
+li {
+    padding: 20px 20px 0px;
+}
+
+li:hover{
+    background-color: #15418C;
+}
+
+.logo {
+    padding: 5px 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    // background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/potw2025a.jpg');
+
+}
