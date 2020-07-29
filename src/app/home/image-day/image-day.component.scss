@@ -1,0 +1,94 @@
+p {
+    color: white;
+}
+
+div {
+    color: white;
+}
+
+img {
+    height: 500px;
+    width: auto;
+    max-height: 800px;
+    border: 1px outset white;
+    border-radius: 5px;
+}
+
+.container {
+    width: 100%;
+    // max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    align-items: center;
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid lightgray;
+    width: 80%;
+}
+
+.imageInformation {
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+}
+
+h5 {
+    margin: 0;
+}
+
+a {
+    padding: 5px 50px;
+    background-color: #15418C;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.search {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dateSearch {
+    display: flex;
+    flex-direction: row;
+}
+
+.day, .month {
+    width: 35px;
+    margin: 10px;
+    height: 30px;
+    font-size: 1.3em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.year {
+    width: 70px;
+    margin: 10px;
+    height: 30px;
+    font-size: 1.3em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.not-found-image{
+    background-image: url('https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/NASA-AD-background.png');
+    width: 500px;
+    height: auto;
+}
+
+.image-notfound {
+    width: 50%;
+}

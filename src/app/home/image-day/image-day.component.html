@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="search">
+        <div class="dateSearch">
+            <input type="text" class="day" placeholder="dd" maxlength="2" [(ngModel)]="day">
+            <input type="text" class="month" placeholder="mm" maxlength="2" [(ngModel)]="month">
+            <input type="text" class="year" placeholder="yyyy" maxlength="4" [(ngModel)]="year">
+        </div>
+        <a (click)="getImageDay(day, month, year)">
+            Search
+        </a>
+    </div>
+    <div class="image" *ngIf="imageData">
+        <!-- {{imageData | json}} -->
+        <img [src]="imageData.url" alt="">        
+        <div class="imageInformation">
+            <h2>{{imageData.title}}</h2>
+            <p>{{imageData.explanation}}</p>
+            <h5>{{imageData.date | date}}</h5><br>
+            <a (click)="openModal(imageData.hdurl)">
+                Ful HD Image
+            </a>
+        </div>
+    </div>
+    <div class="image-notfound" *ngIf="!imageData">
+        <img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/NASA-AD-background.png" alt="">
+        <h2>Not Data Found</h2>
+    </div>
+</div>
+
