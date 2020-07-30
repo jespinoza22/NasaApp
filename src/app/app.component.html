@@ -4,11 +4,12 @@
       <img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" alt="">
     </a>
   </div>
-  <ul>
+  <ul class="menu-header">
     <li routerLink="/imageDay">Image of the Day</li>
     <li>Option 1</li>
     <li>Option 2</li>
   </ul>
+  <i class="icon ion-md-menu" (click)="selectMenu()"></i>
 </header>
 <div class="content">
   <router-outlet></router-outlet>
