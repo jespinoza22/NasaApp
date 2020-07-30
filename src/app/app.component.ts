@@ -10,12 +10,10 @@ export class AppComponent {
 
   selectMenu(){
     const menu = document.querySelector('.menu-header');
-    if (menu.classList.contains('NUEVA')){
-      menu.classList.remove('NUEVA');
+    if (menu.classList.contains('menu-responsive')){
+      menu.classList.remove('menu-responsive');
     }else {
-      menu.classList.add('NUEVA');
+      menu.classList.add('menu-responsive');
     }
-
-    console.log(menu);
   }
 }

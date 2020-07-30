@@ -26,6 +26,10 @@ export class ImageDayComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    const menu = document.querySelector('.menu-header');
+    if (menu.classList.contains('menu-responsive')){
+      menu.classList.remove('menu-responsive');
+    }
   }
 
   getImageDay(day: string, month: string, year: string){
