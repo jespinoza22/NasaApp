@@ -7,9 +7,10 @@ div {
 }
 
 img {
-    height: 500px;
-    width: auto;
-    max-height: 800px;
+    height: auto;
+    width: 500px;
+    max-width: 500px;
+    // max-height: 800px;
     border: 1px outset white;
     border-radius: 5px;
 }
@@ -91,4 +92,25 @@ a {
 
 .image-notfound {
     width: 50%;
+}
+
+//responsive
+
+@media (max-width: 1023px) {
+    img {
+        width: 100%;
+    }
+
+    .image {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search {
+        margin: 20px 0;
+    }
 }
